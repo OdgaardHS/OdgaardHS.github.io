@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="Portfolio of projects, papers and productions.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" id="brand">Portfolio</a>
+    <nav>
+      <a href="#semester">Semester projects</a>
+      <a href="#other">Other projects</a>
+      <a href="#itch">itch.io</a>
+      <a href="#videos">Videos</a>
+      <a href="#papers">Papers</a>
+      <a href="#images">Images</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img id="photo" class="photo" alt="" hidden>
+      <div>
+        <h1 id="name"></h1>
+        <p id="tagline" class="tagline"></p>
+        <p id="about" class="about"></p>
+        <div id="hero-links" class="link-row"></div>
+      </div>
+    </section>
+
+    <section id="semester" class="section">
+      <h2>Semester projects</h2>
+      <div id="semester-list" class="showcase-list"></div>
+    </section>
+
+    <section id="other" class="section">
+      <h2>Other projects</h2>
+      <div id="other-list" class="showcase-list"></div>
+    </section>
+
+    <section id="itch" class="section">
+      <h2>itch.io</h2>
+      <div class="row-wrap">
+        <button class="row-btn row-prev" aria-label="Scroll left" hidden>‹</button>
+        <div id="itch-list" class="row"></div>
+        <button class="row-btn row-next" aria-label="Scroll right" hidden>›</button>
+      </div>
+    </section>
+
+    <section id="videos" class="section">
+      <h2>Videos</h2>
+      <div id="video-list" class="grid grid-video"></div>
+    </section>
+
+    <section id="papers" class="section">
+      <h2>Papers</h2>
+      <div id="paper-list" class="paper-list"></div>
+    </section>
+
+    <section id="images" class="section">
+      <h2>Images</h2>
+      <div id="image-list" class="grid grid-image"></div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <div id="contact-links" class="link-row"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav id="social" class="social" aria-label="Social links"></nav>
+    <div><span id="footer-name"></span> · <span id="year"></span></div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button class="lb-close" aria-label="Close">×</button>
+    <button class="lb-prev" aria-label="Previous">‹</button>
+    <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+    <button class="lb-next" aria-label="Next">›</button>
+  </div>
+
+  <div id="pdfviewer" class="lightbox" hidden>
+    <button class="lb-close" aria-label="Close">×</button>
+    <iframe id="pdf-frame" title="Paper"></iframe>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
